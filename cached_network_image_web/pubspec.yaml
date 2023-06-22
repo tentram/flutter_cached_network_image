@@ -13,13 +13,15 @@ dependencies:
 
   flutter_cache_manager:
     git:
-      url: https://github.com/usefulteam/flutter_cache_manager/tree/develop/flutter_cache_manager
+      url: https://github.com/usefulteam/flutter_cache_manager/
       ref: develop
+      path: flutter_cache_manager
 
   cached_network_image_platform_interface:
     git:
-      url: https://github.com/usefulteam/flutter_cached_network_image/tree/develop/cached_network_image_platform_interface
+      url: https://github.com/usefulteam/flutter_cached_network_image/
       ref: develop
+      path: cached_network_image_platform_interface
 
 dev_dependencies:
   flutter_test:
