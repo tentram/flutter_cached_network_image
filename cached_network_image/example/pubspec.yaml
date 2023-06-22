@@ -12,7 +12,7 @@ dependencies:
     path: ../
   baseflow_plugin_template:
     git:
-      url: https://github.com/usefulteam/baseflow_plugin_template.git
+      url: https://github.com/usefulteam/baseflow_plugin_template
       ref: master
 
   # The following adds the Cupertino Icons font to your application.
