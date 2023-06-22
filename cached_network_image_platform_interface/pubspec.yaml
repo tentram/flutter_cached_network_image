@@ -4,19 +4,22 @@ version: 2.0.0
 homepage: https://github.com/Baseflow/flutter_cached_network_image
 
 environment:
-  sdk: ">=2.18.0 <3.0.0"
+  sdk: ">=3.0.0 <4.0.0"
   flutter: ">=3.3.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  flutter_cache_manager: ^3.0.0
+  flutter_cache_manager:
+    git:
+      url: https://github.com/usefulteam/flutter_cache_manager/tree/develop/flutter_cache_manager
+      ref: develop
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^1.0.4
-  file: ^6.1.2
+  flutter_lints: ^2.0.1
+  file: ^6.1.4
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
