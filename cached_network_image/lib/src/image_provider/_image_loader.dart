@@ -48,7 +48,7 @@ class ImageLoader implements platform.ImageLoader {
       String url,
       String? cacheKey,
       StreamController<ImageChunkEvent> chunkEvents,
-      DecoderBufferCallback decode,
+      ImageDecoderCallback decode,
       BaseCacheManager cacheManager,
       int? maxHeight,
       int? maxWidth,
