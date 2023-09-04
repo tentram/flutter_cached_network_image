@@ -10,9 +10,6 @@ import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:cached_network_image_platform_interface'
         '/cached_network_image_platform_interface.dart' as platform
     show ImageLoader;
-import 'package:cached_network_image_platform_interface'
-        '/cached_network_image_platform_interface.dart'
-    show ImageRenderMethodForWeb;
 
 /// ImageLoader class to load images on IO platforms.
 class ImageLoader implements platform.ImageLoader {
