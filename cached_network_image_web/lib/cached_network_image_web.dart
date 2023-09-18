@@ -7,7 +7,7 @@ import 'dart:ui' as ui;
 
 import 'package:cached_network_image_platform_interface'
         '/cached_network_image_platform_interface.dart' as platform
-    show ImageLoader, ErrorListener, ImageRenderMethodForWeb;
+    show ImageLoader, ImageRenderMethodForWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 
@@ -87,7 +87,7 @@ class ImageLoader implements platform.ImageLoader {
     int? maxHeight,
     int? maxWidth,
     Map<String, String>? headers,
-    platform.ErrorListener? errorListener,
+    ImageErrorListener? errorListener,
     platform.ImageRenderMethodForWeb imageRenderMethodForWeb,
     VoidCallback evictImage,
   ) {
@@ -119,7 +119,7 @@ class ImageLoader implements platform.ImageLoader {
     int? maxHeight,
     int? maxWidth,
     Map<String, String>? headers,
-    platform.ErrorListener? errorListener,
+    ImageErrorListener? errorListener,
     VoidCallback evictImage,
   ) async* {
     try {
