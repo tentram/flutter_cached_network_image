@@ -202,7 +202,7 @@ class CachedNetworkImage extends StatelessWidget {
   final int? maxHeightDiskCache;
 
   /// Listener to be called when images fails to load.
-  final ValueChanged<Object>? errorListener;
+  final ImageErrorListener? errorListener;
 
   /// CachedNetworkImage shows a network image using a caching mechanism. It also
   /// provides support for a placeholder, showing an error and fading into the

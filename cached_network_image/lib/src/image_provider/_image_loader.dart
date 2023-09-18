@@ -39,7 +39,7 @@ class ImageLoader implements platform.ImageLoader {
       maxHeight,
       maxWidth,
       headers,
-      (_) => errorListener?.call(),
+      (o, s) => errorListener?.call(),
       imageRenderMethodForWeb,
       evictImage,
     );
@@ -138,7 +138,7 @@ class ImageLoader implements platform.ImageLoader {
         evictImage();
       });
 
-      errorListener?.call(e);
+      errorListener?.call(e, StackTrace.current);
       rethrow;
     } finally {
       await chunkEvents.close();
