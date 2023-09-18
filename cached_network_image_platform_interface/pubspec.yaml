@@ -10,7 +10,11 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_cache_manager: ^3.3.1
+  flutter_cache_manager:
+    git:
+      url: https://github.com/tentram/flutter_cache_manager
+      ref: develop
+      path: flutter_cache_manager
 
 dev_dependencies:
   file: '>=6.1.4 <8.0.0'
