@@ -40,7 +40,7 @@ class ImageLoader implements platform.ImageLoader {
       maxHeight,
       maxWidth,
       headers,
-      (_) {},
+      (o, s) {},
       imageRenderMethodForWeb,
       evictImage,
     );
@@ -56,7 +56,7 @@ class ImageLoader implements platform.ImageLoader {
     int? maxHeight,
     int? maxWidth,
     Map<String, String>? headers,
-    ValueChanged<Object>? errorListener,
+    ImageErrorListener? errorListener,
     platform.ImageRenderMethodForWeb imageRenderMethodForWeb,
     VoidCallback evictImage,
   ) {
@@ -151,7 +151,7 @@ class ImageLoader implements platform.ImageLoader {
       scheduleMicrotask(() {
         evictImage();
       });
-      errorListener?.call(e);
+      errorListener?.call(e, StackTrace.current);
       rethrow;
     }
     await chunkEvents.close();
